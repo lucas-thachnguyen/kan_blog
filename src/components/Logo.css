@@ -1,10 +1,8 @@
 .Logo {
-  display: flex;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 4rem;
-  width: 4rem;
-  align-items: center;
-  justify-content: center;
+  height: 7.2rem;
+  width: 7.2rem;
+}
+
+.Logo img {
+  max-width: 100%;
 }

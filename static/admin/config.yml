@@ -205,9 +205,8 @@ collections: # A list of collections the CMS should be able to edit
               default: HomePage,
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
-          - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
-          - { label: Subtitle, name: subtitle, widget: markdown, required: false }
+          - { label: Featured Video, name: featuredVideo, widget: file }
+          - { label: Ribbon, name: ribbon, widget: string }
           - { label: Body, name: body, widget: markdown }
           - label: 'Accordion'
             name: 'accordion'

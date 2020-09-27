@@ -1,19 +1,19 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
+import PageHeaderVideo from '../components/PageHeaderVideo'
+import Ribbon from '../components/Ribbon'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
+export const HomePageTemplate = ({ featuredVideo, ribbon, body }) => (
   <main className="Home">
-    <PageHeader
-      large
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
+    <PageHeaderVideo
+      video={featuredVideo}
     />
+
+    <Ribbon description={ribbon} />
 
     <section className="section">
       <div className="container">
@@ -42,9 +42,8 @@ export const pageQuery = graphql`
       ...Meta
       html
       frontmatter {
-        title
-        subtitle
-        featuredImage
+        featuredVideo
+        ribbon
       }
     }
   }

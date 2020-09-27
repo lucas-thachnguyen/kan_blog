@@ -1,9 +1,8 @@
 ---
 template: HomePage
 slug: ''
-title: Lucas Nguyen
-featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: Chào mừng bạn đến với website của tôi!!!
+featuredVideo: 'images/banner-video.mp4'
+ribbon: 'TRÒN HOUSE KỂ CÂU CHUYỆN THƯƠNG HIỆU BẰNG HÌNH ẢNH.'
 meta:
   description: This is a meta description.
   title: Lucas Nguyen

@@ -1,16 +1,16 @@
 .Nav {
-  background: white;
-  position: sticky;
+  position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
-  border-bottom: 1px solid var(--lightGrey);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
 }
 
 .Nav--Container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 6rem;
+  height: 7.2rem;
 }
 
 .Nav--Links {
@@ -42,6 +42,8 @@
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
+  text-transform: uppercase;
+  color: var(--primary);
 }
 
 .NavLink:hover,
@@ -117,6 +119,10 @@
     z-index: 1;
   }
 
+  .Nav .Nav--MenuButton svg {
+    stroke: var(--primary);
+  }
+
   .Nav--Links {
     display: none;
     align-items: center;
@@ -127,7 +133,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
+    background: var(--secondary);
     animation: Nav--Links 0.2s ease;
   }
 
