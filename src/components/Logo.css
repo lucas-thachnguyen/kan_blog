@@ -1,8 +1,13 @@
 .Logo {
-  height: 7.2rem;
   width: 7.2rem;
+  height: 7.2rem;
 }
 
 .Logo img {
   max-width: 100%;
+}
+
+.Logo.logo-footer {
+  width: 10rem;
+  height: 10rem;
 }

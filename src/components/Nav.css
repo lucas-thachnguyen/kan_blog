@@ -105,7 +105,7 @@
   width: 15rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 991px) {
   .Nav--Container {
     display: flex;
   }

@@ -10,6 +10,7 @@
   --borderRadius: 3px;
   --white: #fff;
   --black-1: #212121;
+  --black-2: #121212;
 }
 
 ::-webkit-scrollbar {
@@ -172,7 +173,7 @@ blockquote {
   padding: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 991px) {
   .section {
     width: 100%;
     padding: 5rem 0;
