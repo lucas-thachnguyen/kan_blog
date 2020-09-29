@@ -6,24 +6,29 @@ ribbon: 'TRÒN HOUSE KỂ CÂU CHUYỆN THƯƠNG HIỆU BẰNG HÌNH ẢNH.'
 meta:
   description: This is a meta description.
   title: Lucas Nguyen
+services:
+  - image: 'images/commercial.jpg'
+    alt: ''
+    title: Chụp ảnh quảng cáo
+  - image: 'images/e-comm.jpg'
+    alt: ''
+    title: Chụp ảnh sản phẩm
+  - image: 'images/video-produce.jpg'
+    alt: ''
+    title: Sản xuất video - animation - film
+  - image: 'images/lookbook.jpg'
+    alt: ''
+    title: Chụp ảnh lookbook thời trang
+  - image: 'images/f-and-b.jpg'
+    alt: ''
+    title: Chụp ảnh f&b
+  - image: 'images/retouch.jpg'
+    alt: ''
+    title: Chỉnh sửa hình ảnh
+  - image: 'images/consulting.jpg'
+    alt: ''
+    title: Tư vấn chiến lược visual content marketing
+  - image: 'images/interior.jpg'
+    alt: ''
+    title: Chụp ảnh nội thất - kiến trúc
 ---
-
-Yellowcake is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightning fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).
-
-View the [project overview](https://thriveweb.com.au/the-lab/yellowcake-gatsby-react-js-starter-project/) and the [docs](https://github.com/thriveweb/yellowcake/blob/master/README.md).
-
-# Features
-
-- **[Gatsby](https://gatsbyjs.org)** static site generator
-- **[Netlify CMS](https://github.com/netlify/netlify-cms)** for content management
-- Dynamic menus and forms
-- **[Mailchimp](http://mailchimp.com)** and **[Uploadcare](https://uploadcare.com)** integrations
-- Fully responsive layout for mobile and widescreen browsing
-- Blog searching and paging functionality
-- Seamless image and content sliders
-
-## Get started
-
-View the [Netlify CMS Docs](https://www.netlifycms.org/docs/) and the [Netlify CMS Repo](https://github.com/netlify/netlify-cms).
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thriveweb/yellowcake&stack=cms)

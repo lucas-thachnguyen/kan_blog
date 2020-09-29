@@ -3,11 +3,17 @@ import { graphql } from 'gatsby'
 
 import PageHeaderVideo from '../components/PageHeaderVideo'
 import Ribbon from '../components/Ribbon'
+import ServiceGallery from '../components/ServiceGallery'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ featuredVideo, ribbon, body }) => (
+export const HomePageTemplate = ({
+  featuredVideo,
+  ribbon,
+  services,
+  body
+}) => (
   <main className="Home">
     <PageHeaderVideo
       video={featuredVideo}
@@ -15,9 +21,9 @@ export const HomePageTemplate = ({ featuredVideo, ribbon, body }) => (
 
     <Ribbon description={ribbon} />
 
-    <section className="section">
+    <section className="service">
       <div className="container">
-        <Content source={body} />
+        <ServiceGallery services={services} />
       </div>
     </section>
   </main>
@@ -40,6 +46,7 @@ export const pageQuery = graphql`
   query HomePage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
+      ...Services
       html
       frontmatter {
         featuredVideo
