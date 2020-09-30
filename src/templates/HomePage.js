@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import PageHeaderVideo from '../components/PageHeaderVideo'
 import Ribbon from '../components/Ribbon'
 import ServiceGallery from '../components/ServiceGallery'
-import Content from '../components/Content'
+import SliderLinkImages from '../components/SliderLinkImages'
 import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
@@ -12,7 +12,7 @@ export const HomePageTemplate = ({
   featuredVideo,
   ribbon,
   services,
-  body
+  linkImages
 }) => (
   <main className="Home">
     <PageHeaderVideo
@@ -24,6 +24,12 @@ export const HomePageTemplate = ({
     <section className="service">
       <div className="container">
         <ServiceGallery services={services} />
+      </div>
+    </section>
+
+    <section className="partner">
+      <div className="container">
+        <SliderLinkImages linkImages={linkImages} />
       </div>
     </section>
   </main>
@@ -47,6 +53,7 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       ...Services
+      ...LinkImages
       html
       frontmatter {
         featuredVideo
