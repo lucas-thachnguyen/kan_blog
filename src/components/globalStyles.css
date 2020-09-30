@@ -1,5 +1,5 @@
 :root {
-  --primary: #00c2bd;
+  --primary: #f7ee23;
   --secondary: #000;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
@@ -8,6 +8,9 @@
   --font-primary: 'Open Sans', sans-serif;
   --font-system: system-ui; /* postcssPresetEnv */
   --borderRadius: 3px;
+  --white: #fff;
+  --black-1: #212121;
+  --black-2: #121212;
 }
 
 ::-webkit-scrollbar {
@@ -37,8 +40,8 @@ body {
   font-family: var(--font-system);
   min-height: 100%;
   position: relative;
-  background: white;
-  color: var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
   font-size: 1.6em;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -170,7 +173,7 @@ blockquote {
   padding: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 991px) {
   .section {
     width: 100%;
     padding: 5rem 0;

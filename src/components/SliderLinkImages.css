@@ -1,0 +1,27 @@
+.partner {
+  padding: 40px 0;
+}
+.partner .list-partner .item {
+  display: inline-block;
+  vertical-align: top;
+}
+.partner .list-partner .item:focus {
+  outline: none;
+}
+.partner .list-partner .link-item {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+.partner .list-partner .link-item:focus {
+  outline: none;
+}
+.partner .list-partner .link-item .photo {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .partner {
+    padding: 70px 0;
+  }
+}

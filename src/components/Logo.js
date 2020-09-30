@@ -1,11 +1,12 @@
 import React from 'react'
 import './Logo.css'
 
-export default () => (
-  <div
-    className="Logo"
-    style={{
-      backgroundImage: `url(/images/logo.svg)`
-    }}
-  />
-)
+export default ({ isFooter }) => {
+  const footerClass = isFooter ? 'logo-footer' : ''
+
+  return (
+    <div className={`Logo ${footerClass}`}>
+      <img src="images/logo.gif" alt="" />
+    </div>
+  )
+}

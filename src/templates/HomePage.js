@@ -1,23 +1,35 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
+import PageHeaderVideo from '../components/PageHeaderVideo'
+import Ribbon from '../components/Ribbon'
+import ServiceGallery from '../components/ServiceGallery'
+import SliderLinkImages from '../components/SliderLinkImages'
 import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
+export const HomePageTemplate = ({
+  featuredVideo,
+  ribbon,
+  services,
+  linkImages
+}) => (
   <main className="Home">
-    <PageHeader
-      large
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
+    <PageHeaderVideo
+      video={featuredVideo}
     />
 
-    <section className="section">
+    <Ribbon description={ribbon} />
+
+    <section className="service">
       <div className="container">
-        <Content source={body} />
+        <ServiceGallery services={services} />
+      </div>
+    </section>
+
+    <section className="partner">
+      <div className="container">
+        <SliderLinkImages linkImages={linkImages} />
       </div>
     </section>
   </main>
@@ -40,11 +52,12 @@ export const pageQuery = graphql`
   query HomePage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
+      ...Services
+      ...LinkImages
       html
       frontmatter {
-        title
-        subtitle
-        featuredImage
+        featuredVideo
+        ribbon
       }
     }
   }
